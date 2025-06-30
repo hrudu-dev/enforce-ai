@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .icon-bg { fill: #e3f2fd; stroke: #1976d2; stroke-width: 2; rx: 8; }
+      .icon-text { font: 10px sans-serif; fill: #1976d2; text-anchor: middle; }
+      .compliance-color { fill: #4caf50; }
+      .audit-color { fill: #ff9800; }
+      .policy-color { fill: #9c27b0; }
+    </style>
+  </defs>
+  
+  <!-- Compliance Agent Icon -->
+  <g transform="translate(0, 0)">
+    <rect x="10" y="10" width="80" height="80" class="icon-bg"/>
+    <circle cx="50" cy="35" r="8" class="compliance-color"/>
+    <rect x="35" y="50" width="30" height="3" class="compliance-color"/>
+    <rect x="35" y="55" width="25" height="3" class="compliance-color"/>
+    <rect x="35" y="60" width="20" height="3" class="compliance-color"/>
+    <path d="M45 30 L48 33 L55 26" stroke="#fff" stroke-width="2" fill="none"/>
+    <text x="50" y="100" class="icon-text">Compliance Agent</text>
+  </g>
+  
+  <!-- Audit Agent Icon -->
+  <g transform="translate(100, 0)">
+    <rect x="10" y="10" width="80" height="80" class="icon-bg"/>
+    <circle cx="50" cy="40" r="15" fill="none" stroke="#ff9800" stroke-width="3"/>
+    <circle cx="50" cy="40" r="3" class="audit-color"/>
+    <line x1="60" y1="50" x2="70" y2="60" stroke="#ff9800" stroke-width="3"/>
+    <rect x="40" y="55" width="20" height="2" class="audit-color"/>
+    <rect x="42" y="60" width="16" height="2" class="audit-color"/>
+    <rect x="44" y="65" width="12" height="2" class="audit-color"/>
+    <text x="50" y="100" class="icon-text">Audit Agent</text>
+  </g>
+  
+  <!-- Policy Agent Icon -->
+  <g transform="translate(200, 0)">
+    <rect x="10" y="10" width="80" height="80" class="icon-bg"/>
+    <rect x="35" y="25" width="30" height="20" fill="none" stroke="#9c27b0" stroke-width="2"/>
+    <circle cx="42" cy="35" r="2" class="policy-color"/>
+    <circle cx="50" cy="35" r="2" class="policy-color"/>
+    <circle cx="58" cy="35" r="2" class="policy-color"/>
+    <path d="M40 50 L45 55 L60 40" stroke="#9c27b0" stroke-width="2" fill="none"/>
+    <rect x="35" y="60" width="30" height="2" class="policy-color"/>
+    <rect x="35" y="65" width="25" height="2" class="policy-color"/>
+    <text x="50" y="100" class="icon-text">Policy Agent</text>
+  </g>
+</svg>

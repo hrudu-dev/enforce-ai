@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: bold 16px sans-serif; fill: #2E86AB; }
+      .source-box { fill: #e8f5e8; stroke: #4caf50; stroke-width: 2; rx: 8; }
+      .process-box { fill: #e3f2fd; stroke: #2196f3; stroke-width: 2; rx: 8; }
+      .storage-box { fill: #fff3e0; stroke: #ff9800; stroke-width: 2; rx: 8; }
+      .output-box { fill: #f3e5f5; stroke: #9c27b0; stroke-width: 2; rx: 8; }
+      .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+      .label { font: 11px sans-serif; fill: #333; text-anchor: middle; }
+      .small-label { font: 9px sans-serif; fill: #666; text-anchor: middle; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="25" class="title" text-anchor="middle">EnforceAI Data Flow Architecture</text>
+  
+  <!-- Data Sources -->
+  <text x="100" y="60" class="title">Data Sources</text>
+  
+  <rect x="20" y="80" width="80" height="40" class="source-box"/>
+  <text x="60" y="95" class="label">CloudTrail</text>
+  <text x="60" y="110" class="small-label">API Events</text>
+  
+  <rect x="20" y="140" width="80" height="40" class="source-box"/>
+  <text x="60" y="155" class="label">CloudWatch</text>
+  <text x="60" y="170" class="small-label">Metrics</text>
+  
+  <rect x="20" y="200" width="80" height="40" class="source-box"/>
+  <text x="60" y="215" class="label">Config</text>
+  <text x="60" y="230" class="small-label">Resources</text>
+  
+  <rect x="20" y="260" width="80" height="40" class="source-box"/>
+  <text x="60" y="275" class="label">Webhooks</text>
+  <text x="60" y="290" class="small-label">External</text>
+  
+  <!-- Event Processing -->
+  <text x="250" y="60" class="title">Event Processing</text>
+  
+  <rect x="180" y="120" width="100" height="50" class="process-box"/>
+  <text x="230" y="140" class="label">EventBridge</text>
+  <text x="230" y="155" class="small-label">Event Routing</text>
+  
+  <rect x="180" y="190" width="100" height="50" class="process-box"/>
+  <text x="230" y="210" class="label">SQS Queue</text>
+  <text x="230" y="225" class="small-label">Message Buffer</text>
+  
+  <rect x="180" y="260" width="100" height="50" class="process-box"/>
+  <text x="230" y="280" class="label">Dead Letter</text>
+  <text x="230" y="295" class="small-label">Queue</text>
+  
+  <!-- Processing Layer -->
+  <text x="450" y="60" class="title">AI Processing</text>
+  
+  <rect x="350" y="100" width="90" height="45" class="process-box"/>
+  <text x="395" y="118" class="label">Scanner</text>
+  <text x="395" y="133" class="label">Lambda</text>
+  
+  <rect x="350" y="160" width="90" height="45" class="process-box"/>
+  <text x="395" y="178" class="label">Analyzer</text>
+  <text x="395" y="193" class="label">Lambda</text>
+  
+  <rect x="350" y="220" width="90" height="45" class="process-box"/>
+  <text x="395" y="238" class="label">Enforcer</text>
+  <text x="395" y="253" class="label">Lambda</text>
+  
+  <rect x="460" y="130" width="100" height="50" class="process-box"/>
+  <text x="510" y="150" class="label">Bedrock</text>
+  <text x="510" y="165" class="small-label">AI Analysis</text>
+  
+  <!-- Storage Layer -->
+  <text x="650" y="60" class="title">Data Storage</text>
+  
+  <rect x="600" y="100" width="90" height="45" class="storage-box"/>
+  <text x="645" y="118" class="label">PostgreSQL</text>
+  <text x="645" y="133" class="small-label">Compliance</text>
+  
+  <rect x="600" y="160" width="90" height="45" class="storage-box"/>
+  <text x="645" y="178" class="label">S3 Storage</text>
+  <text x="645" y="193" class="small-label">Audit Logs</text>
+  
+  <rect x="600" y="220" width="90" height="45" class="storage-box"/>
+  <text x="645" y="238" class="label">OpenSearch</text>
+  <text x="645" y="253" class="small-label">Vector DB</text>
+  
+  <rect x="600" y="280" width="90" height="45" class="storage-box"/>
+  <text x="645" y="298" class="label">Redis</text>
+  <text x="645" y="313" class="small-label">Cache</text>
+  
+  <!-- Output Layer -->
+  <text x="400" y="380" class="title">Outputs & Interfaces</text>
+  
+  <rect x="50" y="420" width="100" height="50" class="output-box"/>
+  <text x="100" y="440" class="label">Dashboard</text>
+  <text x="100" y="455" class="small-label">Real-time UI</text>
+  
+  <rect x="170" y="420" width="100" height="50" class="output-box"/>
+  <text x="220" y="440" class="label">Reports</text>
+  <text x="220" y="455" class="small-label">PDF/JSON</text>
+  
+  <rect x="290" y="420" width="100" height="50" class="output-box"/>
+  <text x="340" y="440" class="label">Alerts</text>
+  <text x="340" y="455" class="small-label">Notifications</text>
+  
+  <rect x="410" y="420" width="100" height="50" class="output-box"/>
+  <text x="460" y="440" class="label">API</text>
+  <text x="460" y="455" class="small-label">REST/GraphQL</text>
+  
+  <rect x="530" y="420" width="100" height="50" class="output-box"/>
+  <text x="580" y="440" class="label">Webhooks</text>
+  <text x="580" y="455" class="small-label">Integrations</text>
+  
+  <rect x="650" y="420" width="100" height="50" class="output-box"/>
+  <text x="700" y="440" class="label">AI Assistant</text>
+  <text x="700" y="455" class="small-label">Chat Interface</text>
+  
+  <!-- Arrows - Sources to Processing -->
+  <line x1="100" y1="100" x2="180" y2="145" class="arrow"/>
+  <line x1="100" y1="160" x2="180" y2="145" class="arrow"/>
+  <line x1="100" y1="220" x2="180" y2="145" class="arrow"/>
+  <line x1="100" y1="280" x2="180" y2="145" class="arrow"/>
+  
+  <!-- Processing to Lambda -->
+  <line x1="280" y1="145" x2="350" y2="122" class="arrow"/>
+  <line x1="280" y1="215" x2="350" y2="182" class="arrow"/>
+  <line x1="280" y1="285" x2="350" y2="242" class="arrow"/>
+  
+  <!-- Lambda to Bedrock -->
+  <line x1="440" y1="155" x2="460" y2="155" class="arrow"/>
+  
+  <!-- Lambda to Storage -->
+  <line x1="440" y1="122" x2="600" y2="122" class="arrow"/>
+  <line x1="440" y1="182" x2="600" y2="182" class="arrow"/>
+  <line x1="440" y1="242" x2="600" y2="242" class="arrow"/>
+  
+  <!-- Storage to Cache -->
+  <line x1="645" y1="265" x2="645" y2="280" class="arrow"/>
+  
+  <!-- Storage to Outputs -->
+  <line x1="600" y1="300" x2="100" y2="420" class="arrow"/>
+  <line x1="600" y1="300" x2="220" y2="420" class="arrow"/>
+  <line x1="600" y1="300" x2="340" y2="420" class="arrow"/>
+  <line x1="600" y1="300" x2="460" y2="420" class="arrow"/>
+  <line x1="600" y1="300" x2="580" y2="420" class="arrow"/>
+  <line x1="600" y1="300" x2="700" y2="420" class="arrow"/>
+  
+  <!-- Real-time feedback loop -->
+  <path d="M 700 420 Q 750 350 750 200 Q 750 100 60 100" stroke="#999" stroke-width="1" stroke-dasharray="3,3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="760" y="250" class="small-label" transform="rotate(90 760 250)">Real-time</text>
+  <text x="760" y="270" class="small-label" transform="rotate(90 760 270)">Feedback</text>
+  
+</svg>

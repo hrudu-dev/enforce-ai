@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E86AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A23B72;stop-opacity:1" />
+    </linearGradient>
+    <style>
+      .logo-text { font: bold 24px sans-serif; fill: #2E86AB; }
+      .logo-subtext { font: 12px sans-serif; fill: #666; }
+      .shield { fill: url(#shieldGradient); }
+      .ai-accent { fill: #F18F01; }
+    </style>
+  </defs>
+  
+  <!-- Shield Icon -->
+  <g transform="translate(10, 10)">
+    <!-- Shield shape -->
+    <path d="M20 5 L35 5 Q40 5 40 10 L40 25 Q40 35 30 40 L20 45 L10 40 Q0 35 0 25 L0 10 Q0 5 5 5 Z" class="shield"/>
+    
+    <!-- AI Circuit pattern inside shield -->
+    <circle cx="20" cy="18" r="3" class="ai-accent"/>
+    <circle cx="12" cy="25" r="2" class="ai-accent"/>
+    <circle cx="28" cy="25" r="2" class="ai-accent"/>
+    <line x1="17" y1="18" x2="14" y2="25" stroke="#fff" stroke-width="1.5"/>
+    <line x1="23" y1="18" x2="26" y2="25" stroke="#fff" stroke-width="1.5"/>
+    <line x1="20" y1="21" x2="20" y2="30" stroke="#fff" stroke-width="1.5"/>
+    
+    <!-- Checkmark -->
+    <path d="M15 28 L18 31 L25 22" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="55" y="32" class="logo-text">EnforceAI</text>
+  <text x="55" y="48" class="logo-subtext">Multi-Agent Governance</text>
+</svg>
